@@ -27,13 +27,6 @@ ILFoundation supports the [CardView](https://github.com/iStumblerLabs/CardView) 
 [Soup](https://github.com/iStumblerLabs/Soup) frameworks.
 
 
-## Support ILFoundation! <a id="support"></a>
-
-Are you using ILFoundation in your apps? Would you like to help support the project and get a sponsor credit?
-
-Visit our [Patreon Page](https://www.patreon.com/istumblerlabs) and patronize us in exchange for adequite rewards!
-
-
 ## Categories <a id="categories"></a>
 
 Categories are defined on Foundation classes to provide extensions for text processing and working with data urls.
@@ -83,13 +76,20 @@ Categories are defined on Foundation classes to provide extensions for text proc
 
 ## Version History <a id="versions"></a>
 
-- ILFoundation `1.1.0`: 20 April 2025
+- `1.2.0`: [11 April 2026](https://github.com/alfwatt/ILFoundation/releases/tag/1.2.0)
+    - better nullability
+    - Add `stringEncodingOfData:convertedString:`
+    - Add `-isBinaryPlistData`
+    - Changed swift package url https://github.com/alfwatt/ILFoundation
+
+- `1.1.0`: [20 April 2025](https://github.com/alfwatt/ILFoundation/releases/tag/1.1.0)
     - Added UTF8 Error detection and correction code from [Athenstean](https://athenstean.com/blog/detecing-fixing-encoding-problems-nsstring/)
     - Improved Swift Interface <- this is a breaking change, but the major version is not incremented
     - Adds `Data:x-type/...` URLs for Date, Intervals, Points, Sizes, Rects, Ranges, Vectors, Measures, and Regex objects
     - Adds UUID URNs
     - Fixes iOS build by removing NSPoint
-- ILFoundation `1.0`: 26 February 2025
+
+- `1.0`: [26 February 2025](https://github.com/alfwatt/ILFoundation/releases/tag/1.0.0)
     - Forked from KitBridge, added NSData hash code functions
 
 
@@ -107,14 +107,14 @@ Categories are defined on Foundation classes to provide extensions for text proc
 A Swift Package is defined in `Package.swift` for projects using Swift Package Manager, 
 you can include the following URL in your project to use it:
 
-    https://github.com/iStumblerLabs/ILFoundation.git
+    https://github.com/alfwatt/ILFoundation
 
 
 ## License <a id="license"></a>
 
     The MIT License (MIT)
 
-    Copyright © 2017-2025 Alf Watt <alf@istumbler.net>
+    Copyright © 2017-2026 Alf Watt <alf@istumbler.net>
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
