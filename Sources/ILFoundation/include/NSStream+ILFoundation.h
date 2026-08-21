@@ -1,9 +1,9 @@
 #import <Foundation/Foundation.h>
 
-#ifdef SWIFT_PACKAGE
-#import "ILHashable.h"
-#else
+#if __has_include(<ILFoundation/ILHashable.h>)
 #import <ILFoundation/ILHashable.h>
+#else
+#import "ILHashable.h"
 #endif
 
 NS_ASSUME_NONNULL_BEGIN
