@@ -1,7 +1,6 @@
-
 # ILFoundation <a id="ILFoundation"></a>
 
-ILFoundation: Extensions to the Foundation framework for iOS and macOS development.
+ILFoundation: Swift extensions to Foundation for macOS, iOS, tvOS, watchOS and visionOS.
 
 From [iStumbler Labs](https://istumbler.net/labs/).
 
@@ -9,9 +8,7 @@ From [iStumbler Labs](https://istumbler.net/labs/).
 ## Contents <a id="contents"></a>
 
 - [Goals](#goals)
-- [Support](#support)
-- [Categories](#categories)
-- [Swift](#swift)
+- [Extensions](#extensions)
 - [To Do Items](#todo)
 - [Version History](#versions)
 - [MIT License](#license)
@@ -19,62 +16,80 @@ From [iStumbler Labs](https://istumbler.net/labs/).
 
 ## Goals <a id="goals"></a>
 
-ILFoundation adds UTF8 and hex string encoding to NSString, 
-adds [RFC 2397](https://www.rfc-editor.org/rfc/rfc2397) `data:` URL support to NSURL,
-and adds `ILHashable` and `ILHashingInputStream` for calculating hashs on Data and Streams
+ILFoundation adds message digests of data and streams, UTF detection and hex encoding of data and strings,
+and [RFC 2397](https://www.rfc-editor.org/rfc/rfc2397) `data:` URLs.
 
-ILFoundation supports the [CardView](https://github.com/iStumblerLabs/CardView) and 
+ILFoundation supports the [CardView](https://github.com/iStumblerLabs/CardView) and
 [Soup](https://github.com/iStumblerLabs/Soup) frameworks.
 
 
-## Categories <a id="categories"></a>
+## Extensions <a id="extensions"></a>
 
-Categories are defined on Foundation classes to provide extensions for text processing and working with data urls.
+- [`Hashing`](./Sources/ILFoundation/Hashing.swift)
+  - `HashFunction`: MD2, MD4, MD5, SHA1 and SHA2 224, 256, 384 and 512, `digest(_:)` of any data
+  - `IncrementalHash`: a digest computed a buffer at a time
+  - `StreamHasher`: several digests of a stream, read once, with progress, e.g. all the digests of a large file
+  - `Data.md5`, `Data.sha2_256`… and `Data.digest(_:)`, `InputStream.digest(_:)`
 
-- [`ILHashable`](./Sources/ILFoundation/include/ILHashable.h)
-  - Adds: methods for generating Message Digest and Secure Hashes from objects 
+- [`Data+ILFoundation`](./Sources/ILFoundation/Data+ILFoundation.swift)
+  - `hexString` and `init?(hexString:)`
+  - `isBinaryPropertyList`
 
-- [`NSData+ILFoundation`](./Sources/ILFoundation/include/NSData+ILFoundation.h)
-  - Adds: `ILHashable` methods to `NSData`
+- [`String+ILFoundation`](./Sources/ILFoundation/String+ILFoundation.swift)
+  - `String.Encoding.utf(of:)` the UTF encoding of data from its byte order mark,
+    `String.Encoding.detected(in:)` the encoding Foundation detects, and `byteOrderMark`
+  - `init?(utfData:)`, `init(detecting:)` and `init?(utTypeData:)` for pasteboard data
+  - `data(byteOrderMarked:)`
+  - `containsUTF8Errors` and `cleaningUTF8Errors()`, for UTF-8 decoded as Windows-1252 or Latin-1,
+    with code from [Athenstean](https://athenstean.com/blog/detecing-fixing-encoding-problems-nsstring/)
+  - `lines(maxLength:)`
 
-- [`NSStream+ILFoundation`](./Sources/ILFoundation/include/NSStream+ILFoundation.h)
-  - Adds: `ILHashable` methods to `NSInputStream`
-  - Adds: `ILHasingInputStream` class to wrap `NSInputStream` objects and generate hash codes
-
-- [`NSString+ILFoundation`](./Sources/ILFoundation/include/NSString+ILFoundation.h)
-  - Adds: `+UTFEncodingOfData:` to auto-detect UTF formatted strings
-  - Adds: `+stringWithUTFData:` and `-initWithUTFData:`
-  - Adds: `-dataWithByteOrderUTFEncoding:`
-  - Adds: `+hexStringWithData:` to generate hex output from NSData
-  - Adds: `-initHexStringWithData:`
-  - Adds: `-linesWithMaxLen:` to split a long string (hex or otherwise) into lines of a maximum length
-  
-- [`NSURL+ILFoundation`](./Sources/ILFoundation/include/NSURL+ILFoundation.h) Adds methods for working with [RFC 2397](https://www.rfc-editor.org/rfc/rfc2397) `data:` URLs:
-  - Adds: `+dataURLWithData:` and `+dataURLwithData:mediaType:parameters:contentEncoding:` for genrating `data:` URLs
-  - Adds: `-URLData` and `-URLDataWithMediaType:parameters:contentEncoding:` for parsing `data:` URLs
-      - Supports `utf8`, `hex`, and `base64` encodings
-  - Adds `Data:x-type/...` URLs for:
-    - Date - `+dataURLWithDate:` and `+dateWithDataURL:` 
-    - Intervals - `+dataURLWithDate:interval:` and `+dateWithDataURL:interval:` 
-    - Points - `+dataURLWithPoint:` and `+pointWithDataURL:`
-    - Sizes - `+dataURLWithSize:` and `+sizeWithDataURL:`
-    - Rects - `+dataURLWithRect:` and `+rectWithDataURL:`
-    - Ranges - `+dataURLWithRange:` and `+rangeWithDataURL:`
-    - Vectors - `+dataURLWithVector:` and `+vectorWithDataURL:`
-    - Measures - `+dataURLWithMeasure:` and `+measureWithDataURL:`
-    - Regex - `+dataURLWithRegex:` and `+regexWithDataURL:`
-  - Adds `+URNWithUUID:` and `+UUIDWithURL:` for UUID URNs
-  - Adds: `+URLWithUTTypeData:` for unpacking URLs from pasteboard data with UTType `public.url`
+- [`URL+ILFoundation`](./Sources/ILFoundation/URL+ILFoundation.swift)
+  - `URL(dataURLWith:mediaType:parameters:encoding:)` and `dataURLContents`, `dataURLData` for `data:` URLs
+    in the `utf8`, `hex` and `base64` encodings
+  - `DataURLConvertible`: `dataURL` and `init?(dataURL:)` with `data:x-type/…` URLs for `Data`, `Date`,
+    `DateInterval`, `CGPoint`, `CGSize`, `CGRect`, `CGVector`, `NSRange` and `Measurement<Unit>`,
+    and `NSRegularExpression`
+  - `UUID.urn` and `UUID(urn:)` for UUID URNs
+  - `URL(utTypeData:)` for pasteboard data with the UTType `public.url`
 
 
 ## To Do Items <a id="todo"></a>
 
-- implement ILHashingOutputStream
-- implement SHA3 and Skein Hash functions
-- implement `+dataURLWithPredicate:`... and `+dataURLWithSort:`... in NSURL
+- SHA3 and Skein hash functions
+- `data:` URLs for predicates and sort descriptors
 
 
 ## Version History <a id="versions"></a>
+
+- `2.0.0`: Breaking API changes, ILFoundation is written in Swift
+    - Requires macOS 14, iOS 17, tvOS 17, watchOS 10 or visionOS 26
+    - `ILFoundationSwift` is merged into `ILFoundation`
+    - `StreamHasher` replaces the `ILHashingInputStream` subclasses
+    - Encoding detection checks UTF-32LE before UTF-16LE, their byte order marks start with the same bytes
+    - UTF-8 errors are corrected from Windows-1252 as well as Latin-1
+    - `x-type` values are written with full precision
+
+| 1.x | 2.0 |
+| --- | --- |
+| `ILHashable`, `NSData.md5`… | `Data.md5`…, `Data.digest(_:)`, `HashFunction.digest(_:)` |
+| `NSInputStream.md5`… | `InputStream.digest(_:)` |
+| `ILHashingInputStream`, `ILHashingFunction`, `-readToEndAndHash` | `StreamHasher.digests(of:_:progress:)`, `HashFunction`, `IncrementalHash` |
+| `+hexStringWithData:`, `-initHexStringWithData:`, `NSData.hexString` | `Data.hexString`, `Data(hexString:)` |
+| `-isBinaryPlistData` | `Data.isBinaryPropertyList` |
+| `+UTFEncodingOfData:` | `String.Encoding.utf(of:)` |
+| `+stringEncodingOfData:convertedString:` | `String.Encoding.detected(in:)` |
+| `+stringWithUTFData:`, `-initWithUTFData:` | `String(utfData:)` |
+| `-initWithData:` | `String(detecting:)` |
+| `+stringWithUTTypeData:` | `String(utTypeData:)` |
+| `-dataWithByteOrderUTFEncoding:`, `ILUTF8BOMMagic`… | `String.data(byteOrderMarked:)`, `String.Encoding.byteOrderMark` |
+| `-containsUTF8Errors`, `-stringByCleaningUTF8Errors` | `String.containsUTF8Errors`, `String.cleaningUTF8Errors()` |
+| `-linesWithMaxLen:` | `String.lines(maxLength:)` |
+| `+dataURLWithData:…`, `-URLData`, `-URLDataWithMediaType:…` | `URL(dataURLWith:…)`, `URL.dataURLData`, `URL.dataURLContents` |
+| `+dataURLWithPoint:`, `+pointWithDataURL:`… | `CGPoint.dataURL`, `CGPoint(dataURL:)`… |
+| `+dataURLWithDate:interval:` | `DateInterval.dataURL` |
+| `+URNWithUUID:`, `+UUIDWithURL:` | `UUID.urn`, `UUID(urn:)` |
+| `+URLWithUTTypeData:` | `URL(utTypeData:)` |
 
 - `1.2.0`: [11 April 2026](https://github.com/alfwatt/ILFoundation/releases/tag/1.2.0)
     - better nullability
@@ -104,11 +119,10 @@ Categories are defined on Foundation classes to provide extensions for text proc
 
 ## Swift Package <a id="spm"></a>
 
-A Swift Package is defined in `Package.swift` for projects using Swift Package Manager, 
+A Swift Package is defined in `Package.swift` for projects using Swift Package Manager,
 you can include the following URL in your project to use it:
 
     https://github.com/alfwatt/ILFoundation
-
 
 ## License <a id="license"></a>
 

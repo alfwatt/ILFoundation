@@ -1,16 +1,15 @@
-// swift-tools-version:5.10
+// swift-tools-version:6.2
 
 import PackageDescription
 
 let package = Package(
     name: "ILFoundation",
-    platforms: [.macOS(.v10_14), .iOS(.v14), .tvOS(.v14), .visionOS("26.0")],
+    platforms: [.macOS(.v14), .iOS(.v17), .tvOS(.v17), .watchOS(.v10), .visionOS(.v26)],
     products: [
-        .library( name: "ILFoundation", type: .dynamic, targets: ["ILFoundation"]),
-        .library( name: "ILFoundationSwift", type: . dynamic, targets: ["ILFoundationSwift"])
+        .library(name: "ILFoundation", type: .dynamic, targets: ["ILFoundation"])
     ],
     targets: [
         .target(name: "ILFoundation"),
-        .target(name: "ILFoundationSwift", dependencies: ["ILFoundation"])
+        .testTarget(name: "ILFoundationTests", dependencies: ["ILFoundation"])
     ]
 )

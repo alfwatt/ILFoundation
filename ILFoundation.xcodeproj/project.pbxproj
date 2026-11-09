@@ -3,23 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		757170A62D52E0D2001D8FCA /* NSStream+ILFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 757170A52D52E0D2001D8FCA /* NSStream+ILFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		757170A82D52E0EB001D8FCA /* NSStream+ILFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 757170A72D52E0EB001D8FCA /* NSStream+ILFoundation.m */; };
-		757170AA2D59B09C001D8FCA /* ILHashable.h in Headers */ = {isa = PBXBuildFile; fileRef = 757170A92D59B093001D8FCA /* ILHashable.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7582F66B2D3F642F008588DD /* ILFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7503F61B2C7672B000B8CFC9 /* ILFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7582F66D2D3F642F008588DD /* NSData+ILFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 7582F65A2D3F574E008588DD /* NSData+ILFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7582F66E2D3F642F008588DD /* NSString+ILFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 75CB08832C9A857500B83BC3 /* NSString+ILFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7582F66F2D3F642F008588DD /* NSURL+ILFoundation.h in Headers */ = {isa = PBXBuildFile; fileRef = 75CB088B2C9A8E7600B83BC3 /* NSURL+ILFoundation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		7582F6722D3F642F008588DD /* NSData+ILFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 7582F65E2D3F5759008588DD /* NSData+ILFoundation.m */; };
-		7582F6732D3F642F008588DD /* NSString+ILFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CB08872C9A859000B83BC3 /* NSString+ILFoundation.m */; };
-		7582F6742D3F642F008588DD /* NSURL+ILFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = 75CB088C2C9A8E7600B83BC3 /* NSURL+ILFoundation.m */; };
-		75DA661B2C9BA4C500933174 /* ILFoundationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75DA661A2C9BA4C500933174 /* ILFoundationTests.swift */; };
-		75EEF6B12D638D1100B2EE80 /* Data+ILFoundation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75EEF6A02D638C0D00B2EE80 /* Data+ILFoundation.swift */; };
-		75EEF6BA2D63925100B2EE80 /* ILFoundationSwift.h in Headers */ = {isa = PBXBuildFile; fileRef = 75EEF6B92D63924B00B2EE80 /* ILFoundationSwift.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,35 +17,19 @@
 			remoteGlobalIDString = 7582F6692D3F642F008588DD;
 			remoteInfo = ILFoundation;
 		};
-		75EEF6B22D638D7E00B2EE80 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 7503F6082C76729800B8CFC9 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 75EEF6A82D638CFB00B2EE80;
-			remoteInfo = ILFoundationSwift;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		7503F61B2C7672B000B8CFC9 /* ILFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILFoundation.h; sourceTree = "<group>"; };
 		7503F6312C7672B900B8CFC9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7503F6322C7672C200B8CFC9 /* Package.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
-		757170A52D52E0D2001D8FCA /* NSStream+ILFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSStream+ILFoundation.h"; sourceTree = "<group>"; };
-		757170A72D52E0EB001D8FCA /* NSStream+ILFoundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSStream+ILFoundation.m"; sourceTree = "<group>"; };
-		757170A92D59B093001D8FCA /* ILHashable.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILHashable.h; sourceTree = "<group>"; };
-		7582F65A2D3F574E008588DD /* NSData+ILFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+ILFoundation.h"; sourceTree = "<group>"; };
-		7582F65E2D3F5759008588DD /* NSData+ILFoundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+ILFoundation.m"; sourceTree = "<group>"; };
 		7582F67B2D3F642F008588DD /* ILFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ILFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		75CB08832C9A857500B83BC3 /* NSString+ILFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+ILFoundation.h"; sourceTree = "<group>"; };
-		75CB08872C9A859000B83BC3 /* NSString+ILFoundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+ILFoundation.m"; sourceTree = "<group>"; };
-		75CB088B2C9A8E7600B83BC3 /* NSURL+ILFoundation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSURL+ILFoundation.h"; sourceTree = "<group>"; };
-		75CB088C2C9A8E7600B83BC3 /* NSURL+ILFoundation.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSURL+ILFoundation.m"; sourceTree = "<group>"; };
 		75CB089F2C9B945D00B83BC3 /* ILFoundationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ILFoundationTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		75DA661A2C9BA4C500933174 /* ILFoundationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ILFoundationTests.swift; sourceTree = "<group>"; };
-		75EEF6A02D638C0D00B2EE80 /* Data+ILFoundation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+ILFoundation.swift"; sourceTree = "<group>"; };
-		75EEF6A92D638CFB00B2EE80 /* ILFoundationSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ILFoundationSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		75EEF6B92D63924B00B2EE80 /* ILFoundationSwift.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ILFoundationSwift.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		75F00D000000000000000001 /* ILFoundation */ = {isa = PBXFileSystemSynchronizedRootGroup; path = ILFoundation; sourceTree = "<group>"; };
+		75F00D000000000000000002 /* ILFoundationTests */ = {isa = PBXFileSystemSynchronizedRootGroup; name = ILFoundationTests; path = Tests/ILFoundationTests; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		7582F6752D3F642F008588DD /* Frameworks */ = {
@@ -75,13 +46,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75EEF6A62D638CFB00B2EE80 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -91,41 +55,15 @@
 				7503F6312C7672B900B8CFC9 /* README.md */,
 				7503F6322C7672C200B8CFC9 /* Package.swift */,
 				7503F6302C7672B000B8CFC9 /* Sources */,
+				75F00D000000000000000002 /* ILFoundationTests */,
 				7503F63D2C76732E00B8CFC9 /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		7503F61F2C7672B000B8CFC9 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				7503F61B2C7672B000B8CFC9 /* ILFoundation.h */,
-				757170A92D59B093001D8FCA /* ILHashable.h */,
-				7582F65A2D3F574E008588DD /* NSData+ILFoundation.h */,
-				757170A52D52E0D2001D8FCA /* NSStream+ILFoundation.h */,
-				75CB08832C9A857500B83BC3 /* NSString+ILFoundation.h */,
-				75CB088B2C9A8E7600B83BC3 /* NSURL+ILFoundation.h */,
-			);
-			path = include;
-			sourceTree = "<group>";
-		};
-		7503F62D2C7672B000B8CFC9 /* ILFoundation */ = {
-			isa = PBXGroup;
-			children = (
-				7503F61F2C7672B000B8CFC9 /* include */,
-				7582F65E2D3F5759008588DD /* NSData+ILFoundation.m */,
-				757170A72D52E0EB001D8FCA /* NSStream+ILFoundation.m */,
-				75CB08872C9A859000B83BC3 /* NSString+ILFoundation.m */,
-				75CB088C2C9A8E7600B83BC3 /* NSURL+ILFoundation.m */,
-			);
-			path = ILFoundation;
 			sourceTree = "<group>";
 		};
 		7503F6302C7672B000B8CFC9 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				7503F62D2C7672B000B8CFC9 /* ILFoundation */,
-				75B927F42D638BD200C567DC /* ILFoundationSwift */,
-				75DA66302C9CC42700933174 /* ILFoundationTests */,
+				75F00D000000000000000001 /* ILFoundation */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -135,60 +73,13 @@
 			children = (
 				75CB089F2C9B945D00B83BC3 /* ILFoundationTests.xctest */,
 				7582F67B2D3F642F008588DD /* ILFoundation.framework */,
-				75EEF6A92D638CFB00B2EE80 /* ILFoundationSwift.framework */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		75B927F42D638BD200C567DC /* ILFoundationSwift */ = {
-			isa = PBXGroup;
-			children = (
-				75EEF6B82D63923300B2EE80 /* include */,
-				75EEF6A02D638C0D00B2EE80 /* Data+ILFoundation.swift */,
-			);
-			path = ILFoundationSwift;
-			sourceTree = "<group>";
-		};
-		75DA66302C9CC42700933174 /* ILFoundationTests */ = {
-			isa = PBXGroup;
-			children = (
-				75DA661A2C9BA4C500933174 /* ILFoundationTests.swift */,
-			);
-			path = ILFoundationTests;
-			sourceTree = "<group>";
-		};
-		75EEF6B82D63923300B2EE80 /* include */ = {
-			isa = PBXGroup;
-			children = (
-				75EEF6B92D63924B00B2EE80 /* ILFoundationSwift.h */,
-			);
-			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		7582F66A2D3F642F008588DD /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7582F66B2D3F642F008588DD /* ILFoundation.h in Headers */,
-				757170AA2D59B09C001D8FCA /* ILHashable.h in Headers */,
-				7582F66D2D3F642F008588DD /* NSData+ILFoundation.h in Headers */,
-				757170A62D52E0D2001D8FCA /* NSStream+ILFoundation.h in Headers */,
-				7582F66E2D3F642F008588DD /* NSString+ILFoundation.h in Headers */,
-				7582F66F2D3F642F008588DD /* NSURL+ILFoundation.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		75EEF6A42D638CFB00B2EE80 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				75EEF6BA2D63925100B2EE80 /* ILFoundationSwift.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
@@ -196,7 +87,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7582F6782D3F642F008588DD /* Build configuration list for PBXNativeTarget "ILFoundation" */;
 			buildPhases = (
-				7582F66A2D3F642F008588DD /* Headers */,
 				7582F6702D3F642F008588DD /* Sources */,
 				7582F6752D3F642F008588DD /* Frameworks */,
 				7582F6772D3F642F008588DD /* Resources */,
@@ -204,6 +94,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				75F00D000000000000000001 /* ILFoundation */,
 			);
 			name = ILFoundation;
 			productName = KitBridge;
@@ -221,8 +114,10 @@
 			buildRules = (
 			);
 			dependencies = (
-				75EEF6B32D638D7E00B2EE80 /* PBXTargetDependency */,
 				75EEF6A32D638CDA00B2EE80 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				75F00D000000000000000002 /* ILFoundationTests */,
 			);
 			name = ILFoundationTests;
 			packageProductDependencies = (
@@ -230,26 +125,6 @@
 			productName = KitBridgeTests;
 			productReference = 75CB089F2C9B945D00B83BC3 /* ILFoundationTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		75EEF6A82D638CFB00B2EE80 /* ILFoundationSwift */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 75EEF6AE2D638CFB00B2EE80 /* Build configuration list for PBXNativeTarget "ILFoundationSwift" */;
-			buildPhases = (
-				75EEF6A42D638CFB00B2EE80 /* Headers */,
-				75EEF6A52D638CFB00B2EE80 /* Sources */,
-				75EEF6A62D638CFB00B2EE80 /* Frameworks */,
-				75EEF6A72D638CFB00B2EE80 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ILFoundationSwift;
-			packageProductDependencies = (
-			);
-			productName = ILFoundationSwift;
-			productReference = 75EEF6A92D638CFB00B2EE80 /* ILFoundationSwift.framework */;
-			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -267,26 +142,22 @@
 					75CB089E2C9B945D00B83BC3 = {
 						CreatedOnToolsVersion = 16.0;
 					};
-					75EEF6A82D638CFB00B2EE80 = {
-						CreatedOnToolsVersion = 16.2;
-					};
 				};
 			};
 			buildConfigurationList = 7503F60B2C76729800B8CFC9 /* Build configuration list for PBXProject "ILFoundation" */;
-			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
+			preferredProjectObjectVersion = 77;
 			mainGroup = 7503F6072C76729800B8CFC9;
 			productRefGroup = 7503F63D2C76732E00B8CFC9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				7582F6692D3F642F008588DD /* ILFoundation */,
-				75EEF6A82D638CFB00B2EE80 /* ILFoundationSwift */,
 				75CB089E2C9B945D00B83BC3 /* ILFoundationTests */,
 			);
 		};
@@ -307,13 +178,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		75EEF6A72D638CFB00B2EE80 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -321,10 +185,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7582F6722D3F642F008588DD /* NSData+ILFoundation.m in Sources */,
-				7582F6732D3F642F008588DD /* NSString+ILFoundation.m in Sources */,
-				757170A82D52E0EB001D8FCA /* NSStream+ILFoundation.m in Sources */,
-				7582F6742D3F642F008588DD /* NSURL+ILFoundation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,15 +192,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75DA661B2C9BA4C500933174 /* ILFoundationTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		75EEF6A52D638CFB00B2EE80 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				75EEF6B12D638D1100B2EE80 /* Data+ILFoundation.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,11 +202,6 @@
 			isa = PBXTargetDependency;
 			target = 7582F6692D3F642F008588DD /* ILFoundation */;
 			targetProxy = 75EEF6A22D638CDA00B2EE80 /* PBXContainerItemProxy */;
-		};
-		75EEF6B32D638D7E00B2EE80 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 75EEF6A82D638CFB00B2EE80 /* ILFoundationSwift */;
-			targetProxy = 75EEF6B22D638D7E00B2EE80 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -481,7 +327,7 @@
 				DEFINES_MODULE = YES;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu17;
@@ -508,9 +354,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				MARKETING_VERSION = 2.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.istumbler.$(PRODUCT_NAME)";
@@ -575,7 +419,7 @@
 				DEFINES_MODULE = YES;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
+				SWIFT_INSTALL_OBJC_HEADER = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -597,9 +441,7 @@
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				MARKETING_VERSION = 2.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.istumbler.$(PRODUCT_NAME)";
@@ -682,7 +524,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.7;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -692,7 +534,7 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TVOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_TVOS_DEPLOYMENT_TARGET)";
 			};
 			name = Debug;
@@ -751,7 +593,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MACOSX_DEPLOYMENT_TARGET = 14.7;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.istumbler.${PRODUCT_NAME)";
@@ -759,151 +601,8 @@
 				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TVOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_TVOS_DEPLOYMENT_TARGET)";
-			};
-			name = Release;
-		};
-		75EEF6AF2D638CFB00B2EE80 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = E8G8ARB44Z;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = net.istumbler.ILFoundationSwift;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = auto;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TVOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_TVOS_DEPLOYMENT_TARGET)";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				XROS_DEPLOYMENT_TARGET = "$(RECOMMENDED_XROS_DEPLOYMENT_TARGET)";
-			};
-			name = Debug;
-		};
-		75EEF6B02D638CFB00B2EE80 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALLOW_TARGET_PLATFORM_SPECIALIZATION = YES;
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
-				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_ENABLE_OBJC_WEAK = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = E8G8ARB44Z;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu17;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_IPHONEOS_DEPLOYMENT_TARGET)";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = (
-					"@executable_path/../Frameworks",
-					"@loader_path/Frameworks",
-				);
-				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MACOSX_DEPLOYMENT_TARGET = "$(RECOMMENDED_MACOSX_DEPLOYMENT_TARGET)";
-				MARKETING_VERSION = 1.0;
-				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
-				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				MTL_FAST_MATH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = net.istumbler.ILFoundationSwift;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = auto;
-				SKIP_INSTALL = YES;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_INSTALL_OBJC_HEADER = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
-				TVOS_DEPLOYMENT_TARGET = "$(RECOMMENDED_TVOS_DEPLOYMENT_TARGET)";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-				XROS_DEPLOYMENT_TARGET = "$(RECOMMENDED_XROS_DEPLOYMENT_TARGET)";
 			};
 			name = Release;
 		};
@@ -933,15 +632,6 @@
 			buildConfigurations = (
 				75CB08A72C9B945D00B83BC3 /* Debug */,
 				75CB08A82C9B945D00B83BC3 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		75EEF6AE2D638CFB00B2EE80 /* Build configuration list for PBXNativeTarget "ILFoundationSwift" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				75EEF6AF2D638CFB00B2EE80 /* Debug */,
-				75EEF6B02D638CFB00B2EE80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
