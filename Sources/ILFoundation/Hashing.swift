@@ -73,6 +73,9 @@ public struct IncrementalHash: Sendable {
         case sha2_512(SHA512)
     }
 
+#if hasAttribute(diagnose)
+    @diagnose(DeprecatedDeclaration, as: ignored) // MD2 and MD4 are deprecated, they're here to check old digests
+#endif
     public init(_ function: HashFunction) {
         self.function = function
         switch function {
@@ -98,6 +101,9 @@ public struct IncrementalHash: Sendable {
 
     /// add the
     /// @param bytes provided to the digest
+#if hasAttribute(diagnose)
+    @diagnose(DeprecatedDeclaration, as: ignored) // MD2 and MD4 are deprecated, they're here to check old digests
+#endif
     public mutating func update(_ bytes: UnsafeRawBufferPointer) {
         guard bytes.count > 0 else { return }
         switch state {
@@ -137,6 +143,9 @@ public struct IncrementalHash: Sendable {
     }
 
     /// @returns the digest of everything added to it
+#if hasAttribute(diagnose)
+    @diagnose(DeprecatedDeclaration, as: ignored) // MD2 and MD4 are deprecated, they're here to check old digests
+#endif
     public func finalize() -> Data {
         var digest = Data(count: function.digestLength)
         switch state {
