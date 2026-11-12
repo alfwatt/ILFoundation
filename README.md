@@ -19,8 +19,8 @@ From [iStumbler Labs](https://istumbler.net/labs/).
 ILFoundation adds message digests of data and streams, UTF detection and hex encoding of data and strings,
 and [RFC 2397](https://www.rfc-editor.org/rfc/rfc2397) `data:` URLs.
 
-ILFoundation supports the [CardView](https://github.com/iStumblerLabs/CardView) and
-[Soup](https://github.com/iStumblerLabs/Soup) frameworks.
+ILFoundation supports the [CardView](https://github.com/alfwatt/CardView) and
+[Soup](https://github.com/alfwatt/Soup) frameworks.
 
 
 ## Extensions <a id="extensions"></a>
@@ -110,7 +110,7 @@ ILFoundation supports the [CardView](https://github.com/iStumblerLabs/CardView) 
 
 ## Using ILFoundation in your App
 
-- Clone the latest sources: `git clone https://github.com/iStumblerLabs/ILFoundation.git`
+- Clone the latest sources: `git clone https://github.com/alfwatt/ILFoundation.git`
   near or inside your application's project directory
 - Drag `ILFoundation.xcodproj` into your project
 - include the `ILFoundation.framework` in your applications `Resources/Frameworks` directory
